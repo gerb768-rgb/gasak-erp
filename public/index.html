@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام غسق ERP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>غسق ERP</h1>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>القائمة</h3>
+      <button onclick="showSection('dashboard')">📊 لوحة القيادة</button>
+      <button onclick="showSection('pos')">🛒 نقطة البيع</button>
+      <button onclick="showSection('inventory')">📦 المخزون</button>
+      <button onclick="showSection('customers')">👥 العملاء</button>
+      <button onclick="showSection('employees')">👔 الموظفين</button>
+      <button onclick="showSection('accounting')">📒 المحاسبة</button>
+      <button onclick="showSection('reports')">📈 التقارير</button>
+    </aside>
+    <main>
+      <div id="dashboard" class="section"></div>
+      <div id="pos" class="section" style="display:none"></div>
+      <div id="inventory" class="section" style="display:none"></div>
+      <div id="customers" class="section" style="display:none"></div>
+      <div id="employees" class="section" style="display:none"></div>
+      <div id="accounting" class="section" style="display:none"></div>
+      <div id="reports" class="section" style="display:none"></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
